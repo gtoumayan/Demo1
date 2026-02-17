@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roleplay Rumble</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>🎭 Roleplay Rumble</h1>
+    <button id="scoreboardBtn" class="secondary">Scoreboard</button>
+  </header>
+
+  <main id="app" class="screen"></main>
+
+  <div id="scoreboardModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <h2>Scoreboard</h2>
+      <div id="scoreboardContent"></div>
+      <button id="closeScoreboard" class="primary">Close</button>
+    </div>
+  </div>
+
+  <div id="rulesModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <h2>Quick Rules</h2>
+      <ul>
+        <li>Performer draws Scene + Character + Emotion in private.</li>
+        <li>Audience guesses cards. Correct cards are worth points.</li>
+        <li>If all stage cards are guessed, performer team may gain a Trophy (4 points).</li>
+        <li>Challenge cards are worth 3 points and can be played by trailing players/teams.</li>
+      </ul>
+      <button id="closeRules" class="primary">Close</button>
+    </div>
+  </div>
+
+  <script src="js/decks.js"></script>
+  <script src="js/logic.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
